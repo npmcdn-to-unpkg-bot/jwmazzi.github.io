@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Jeff</title>
+		<title>Itsy Bitsy</title>
+
+		<!-- CSS Include Statements -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.css"/>
+		<link rel="stylesheet" href="C:\Users\jeffr_000\Desktop\ItsyBitsy\css\itsybitsy.css"/>
+
+		<!-- JavaScript Include Statements -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+			    $('#fullpage').fullpage();
+			});
+				
+		</script>
+
+
 	</head>
+
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home Style</a></li>
-	        	<li><a href="/about">About Me</a></li>
-        		<li><a href="/csv">CSV</a></li>
-        		<li><a href="/blog">Blogging</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1></h1>This the test of tests, I'm Jeff!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
+
+		<div id="fullpage">
+			<div class="section" id="first">
+				<div>
+				<img id="pigImg" src="C:\Users\jeffr_000\Desktop\ItsyBitsy\images\pigOne.png"></div>
+			</div>
+			<div class="section" id="second"><h1>Second</h1></div>
+		</div>
+
+
 	</body>
 </html>
