@@ -1,20 +1,10 @@
-h1{
-	text-align: center;
-	color: white;
-}
-
 #first{
-	background-color: #a3c6c2;
+	background-color: green;
 }
 
 #second{
 	background-color: #eb866a;
 }
 
-#pigImg {
-    display: block;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-}
 
 
