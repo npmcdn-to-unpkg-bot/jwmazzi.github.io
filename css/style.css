@@ -2,17 +2,6 @@
 	background-color: #a3c6c2;
 }
 
-#moveOne {
+#map {
 	background-color: #eb866a;
-}
-
-#pigImg {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#map { 
-	height: 180px;
-	z-index: 5;
 }
