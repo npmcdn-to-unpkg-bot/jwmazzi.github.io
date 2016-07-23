@@ -2,9 +2,10 @@
 	background-color: #a3c6c2;
 }
 
-#map {
+#viewer {
 	background-color: #eb866a;
+}
+
+#map {
 	height: 200px;
-	width: 2000px;
-	z-index: 10;
 }
