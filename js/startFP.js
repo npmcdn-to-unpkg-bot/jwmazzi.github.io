@@ -3,11 +3,6 @@ $(document).ready(function() {
 			});
 
 
-var moveOneMap = L.map('map').setView([51.505, -123], 13);
-
-
-
-
 var CartoDB_DarkMatterNoLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 	subdomains: 'abcd',
@@ -30,4 +25,4 @@ var map = L.map('map', {
 	layers: [Thunderforest_Transport]
 	}).setView([38.37652, -75.63606], 13);
 
-L.control.layers(baseMaps, overLays).addTo(map);
+L.control.layers(baseMaps).addTo(map);
