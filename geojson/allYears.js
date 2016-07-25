@@ -660,11 +660,11 @@ var allYears = {
 };
 
 var yearStyle = {
-	radius: 2,
+	radius: 10,
 	fillColor: "#ff7800",
 	color: "#ff7800",
-	weight: 7,
-	opacity: .3,
-	fillOpacity: .75
+	weight: 8,
+	opacity: .2,
+	fillOpacity: .25
 };
 

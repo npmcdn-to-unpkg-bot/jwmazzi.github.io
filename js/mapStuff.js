@@ -2,29 +2,17 @@ var Thunderforest_Pioneer = L.tileLayer('http://{s}.tile.thunderforest.com/pione
 						attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 					});
 
-var map = L.map('map').setView([39.23225, -98.39355], 5);
+var map = L.map('map').setView([39.5, -98.35], 5);
 Thunderforest_Pioneer.addTo(map);
 var popup = L.popup();
 
-// Loading Leaflet Sidebar
-var sidebar = L.control.sidebar('sidebar', {
-	position: 'left'
-});
-
-map.addControl(sidebar);
-
-setTimeout(function () {
-	sidebar.show();
-}, 500);
-
-L.geoJson(allYears, {
-}).addTo(map);
-
-var popup = L.popup();
-function onMapClick(e) {
-	popup
-		.setLatLng(e.latlng)
-		.setContent("You clicked the map at " + e.latlng.toString())
-		.openOn(map);
-}
-map.on('click', onMapClick);
+allYears =	L.geoJson(allYears, {
+				pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, yearStyle);
+				},
+				onEachFeature: function (feature, layer) {
+				layer.bindPopup("<b>Year Point</b><br/>" + 
+				"Team: " + feature.properties.team +
+				"<br>Frequency: " + feature.properties.frequency);
+				}
+				}).addTo(map);

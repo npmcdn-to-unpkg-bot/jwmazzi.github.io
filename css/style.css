@@ -1,5 +1,4 @@
 #home {
-	position: relative;
 	background: #686868;
 	color: white;
 	text-align: center;
@@ -7,7 +6,6 @@
 }
 
 #title {
-	position: relative;
 	max-width: 75%;
 	margin: 0 auto;
 	padding: 25px;
@@ -18,7 +16,6 @@
 }
 
 #subTitle {
-	position: relative;
 	max-width: 75%;
 	margin: 0 auto;
 	padding: 25px;
@@ -29,7 +26,6 @@
 }
 
 #userInfo {
-	position: relative;
 	padding: 25px;
 	max-width: 75%;
 	margin: 0 auto;
@@ -44,17 +40,14 @@
 }
 
 #userInfo h4 {
-	position: relative;
 	text-align: left;
 }
 
 #userInfo p {
-	position: relative;
 	text-align: left;
 }
 
 #userInfo img{
-	position: relative;
 	padding: 5px;
 	max-width: 100px;
 	margin: 0 auto;
@@ -66,7 +59,6 @@
 }
 
 .startButton {
-	position: relative;
 	background-color: #ddbd8b; 
     border: none;
     color: white;
@@ -82,17 +74,14 @@
 }
 
 .start:hover {
-	position: relative;
     box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #viewer {
-	position: relative;
 	background: #686868;
 }
 
 #map {
-	position: relative;
 	height: 850px;
 	margin: 0 auto;
 }
