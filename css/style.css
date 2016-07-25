@@ -1,17 +1,88 @@
 #home {
-	background-color: #B5D0D0;
+	background: #686868;
+	color: white;
+	text-align: center;
+	font-family: "Arial", sans-serif;
+}
+
+#title {
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 25px;
+	
+	border-style: solid;
+	border-color: white;
+    border-width: 1px;
+}
+
+#subTitle {
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 25px;
+	
+	border-style: solid;
+	border-color: white;
+    border-width: 1px;
+}
+
+#userInfo {
+	padding: 25px;
+	max-width: 75%;
+	margin: 0 auto;
+	
+	border-style: solid;
+	border-color: white;
+    border-width: 1px;
+	
+	-webkit-column-count: 2; 
+	-moz-column-count: 2; 
+	column-count: 2;
+}
+
+#userInfo h4 {
+	text-align: left;
+}
+
+#userInfo p {
+	text-align: left;
+}
+
+#userInfo img{
+	padding: 5px;
+	max-width: 100px;
+	margin: 0 auto;
+	float: right;
+	
+	border-style: solid;
+	border-color: white;
+    border-width: 1px;
+}
+
+.startButton {
+	background-color: #ddbd8b; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.start:hover {
+    box-shadow: 0 10px 14px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #viewer {
-	background-color: #eb866a;
+	background: #686868;
 }
 
 #map {
 	height: 850px;
-	width: 100%;
 	margin: 0 auto;
 }
 
-.viewbar p {
-	color: blue;
-}

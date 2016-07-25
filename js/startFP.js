@@ -1,6 +1,8 @@
 $(document).ready(function() {
-			    $('#fullpage').fullpage();
+			    $('#fullpage').fullpage({
+				});
+				console.log('Full Page Fine');
 			});
-
+			
 
 

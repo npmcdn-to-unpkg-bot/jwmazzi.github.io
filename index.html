@@ -15,19 +15,42 @@
 		<script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
 		<script src="/js/startFP.js"></script>
 		<script src="/js/leaflet-sidebar.js"></script>
+
+		<script src="/geojson/allYears.js"></script>
+		
 	</head>
 
 	<body>
-		
 		<div id="fullpage">
 
 			<div class="section" id="home">
+			
+				<div id="title">
+					<h1>Shifting Center: Visualizing American Major League Baseball</h1>
+				</div>
+				
+				<div id="subTitle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vestibulum neque sit amet turpis aliquam commodo a vel arcu. Phasellus imperdiet egestas libero, ac sollicitudin felis fermentum at. Quisque eu tortor vel dolor pellentesque ullamcorper at viverra sem. In euismod metus odio, non placerat est pellentesque in. Duis accumsan elementum augue, et tincidunt ligula venenatis sed. Etiam lectus tellus, venenatis a libero nec, tristique hendrerit justo. Suspendisse potenti.</p>
+					<br/>
+					<p>Duis sagittis convallis dui ac mattis. Integer volutpat auctor ante, lobortis bibendum dolor finibus a. Cras urna ante, fringilla et ligula id, pharetra tempor dolor. Sed velit sem, fringilla vel massa ut, dictum volutpat massa. Nulla eu erat finibus, lacinia eros posuere, scelerisque nisl. Ut felis urna, molestie in pellentesque non, tristique sit amet tellus. Donec ultrices nec leo ut malesuada. Mauris iaculis maximus justo consequat cursus. In lacinia, eros sed tincidunt consequat, risus ligula ultrices nunc, sed scelerisque lorem augue luctus eros. Donec euismod, est ac eleifend suscipit, ex lectus fringilla nisl, eu ultricies diam sem sit amet quam. Nullam augue orci, fringilla id ultrices vitae, malesuada id nunc. Aenean tincidunt venenatis porta. Sed condimentum ligula tellus, sit amet vestibulum augue porttitor a. Phasellus vel orci ullamcorper, dictum sem eget, imperdiet mauris.</p>
+				</div>
+				
+				<div id="userInfo">
+					<h4>Dr. Mark DeSocio, Salisbury University</h4>
+					<p>DeSocio should give us a tag line that he thinks would be a nice way to encapsulate his interest or whatever</p>
+					<img src="/images/user.png">
+
+				</div>
+				
+				<div id="startButton">
+					<button class="startButton start">Let's Get Started</button>	
+				</div>
 			</div>
 
 			<div class="section" id="viewer">
 
 				<div id="sidebar">
-					<p>Shifting Centers</p>'
+					<h3>Shifting Centers</h3>
 					<ul>
 						<li>Tab A</li>
 						<li>Tab B</li>
@@ -35,40 +58,7 @@
 				</div>
 
 				<div id="map">
-					<script>
-					// Loading Simple Instance of Leaflet Map
-					var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-						maxZoom: 19,
-						attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-					});
-
-					var map = L.map('map').setView([35.78217, -116.71875], 4);
-					OpenStreetMap_Mapnik.addTo(map);
-					var popup = L.popup();
-
-					// Loading Leaflet Sidebar
-					var sidebar = L.control.sidebar('sidebar', {
-					position: 'left'
-					});
-
-					map.addControl(sidebar);
-
-					setTimeout(function () {
-					    sidebar.show();
-					}, 500);
-
-					var popup = L.popup();
-
-					function onMapClick(e) {
-					    popup
-					        .setLatLng(e.latlng)
-					        .setContent("You clicked the map at " + e.latlng.toString())
-					        .openOn(map);
-					}
-
-					map.on('click', onMapClick);
-
-					</script>
+					<script src="js/mapStuff.js"></script>
 				</div>
 
 			</div>
