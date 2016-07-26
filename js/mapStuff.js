@@ -16,3 +16,17 @@ allYears =	L.geoJson(allYears, {
 				"<br>Frequency: " + feature.properties.frequency);
 				}
 				}).addTo(map);
+				
+				
+var sidebar = L.control.sidebar('sidebar', {
+	closeButton: true,
+	position: 'left'
+});
+map.addControl(sidebar);
+
+
+$('#info').click(function(){
+	sidebar.toggle();
+});
+
+
